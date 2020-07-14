@@ -20,6 +20,10 @@ header {
   line-height: 50px;
   font-size: 0.7rem;
   font-weight: 700;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
 }
 
 .header-top .helbiz-logo img {
@@ -39,8 +43,8 @@ header {
   display: inline-block;
 }
 
-.side-nav ul li a,
-.main-nav ul li a {
+.main-nav ul li a,
+.side-nav ul li a {
   text-decoration: none;
   color: #000;
   padding-left: 30px;
@@ -60,15 +64,12 @@ header {
   font-weight: 700;
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .header-top > .container-75 {
     width: 100%;
     padding: 0 15px;
   }
 
-  .header-top > .container-75 > .col-lg-10 {
-    display: none;
-  }
   .header-top > .container-75 > .option-bars {
     display: block;
     text-align: right;
@@ -80,6 +81,7 @@ header {
   color: #000;
   }
 }
+
 /* fine barra di navigazione*/
 /* Jumbotron */
 .jumbotron {
@@ -107,12 +109,13 @@ header {
 }
 
 .jumbotron-text h1 {
-  font-size: 3rem;
+  font-size: 250%;
 }
 
 .jumbotron-text p {
   margin-top: 10px;
   font-weight: 700;
+  font-size: 100%;
 }
 /* fine Jumbotron */
 /* fine header */
@@ -120,18 +123,11 @@ header {
 /* Main */
 /* Sezione bici sfondo grigio */
 section.bikes {
-  padding: 60px 0;
   text-align: center;
 }
 
 .bikes > [class*="helbiz"] {
   background-color: #FAFAFA;
-  width: calc(95% / 2);
-  padding: 90px 20px 30px 20px;
-}
-
-.bikes .helbizbike {
-  margin-left: 5%;
 }
 
 .helbizgo-logo {
@@ -145,14 +141,14 @@ section.bikes {
 }
 
 .bikes p {
-  font-size: 1.2rem;
+  font-size: 110%;
   padding: 30px 0;
 }
 
 .bikes a {
   text-decoration: none;
   color: #0099e6;
-  font-size: 1.1rem;
+  font-size: 110%;
 }
 
 .bikes i {
@@ -163,6 +159,31 @@ section.bikes {
   max-width: 100%;
   height: auto;
   max-height: 400px;
+}
+
+@media screen and (min-width: 769px) {
+  section.bikes {
+    padding: 60px 0;
+  }
+
+  .bikes > [class*="helbiz"] {
+    width: calc(95% / 2);
+    padding: 90px 20px 30px 20px;
+  }
+  .bikes .helbizbike {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.bikes {
+    padding: 10px 0;
+  }
+
+  .bikes > [class*="helbiz"] {
+    padding: 20px 10px;
+    margin-top: 20px;
+  }
 }
 /* Fine sezione bici sfondo grigio */
 /* Fine main */
