@@ -5,7 +5,7 @@ padding: 0;
 font-family: "Open Sans", sans-serif;
 }
 
-.container {
+.container-75 {
   width: 75%;
   margin: auto;
 }
@@ -22,7 +22,7 @@ header {
   font-weight: 700;
 }
 
-.header-top .logo img {
+.header-top .helbiz-logo img {
   width: 80px;
   height: auto;
 }
@@ -39,11 +39,11 @@ header {
   display: inline-block;
 }
 
-.main-nav ul li a,
-.side-nav ul li a {
+.side-nav ul li a,
+.main-nav ul li a {
   text-decoration: none;
   color: #000;
-  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .side-nav .language-select {
@@ -61,16 +61,21 @@ header {
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .header-top > .container > .col-lg-10 {
+  .header-top > .container-75 {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .header-top > .container-75 > .col-lg-10 {
     display: none;
   }
-  .header-top > .container > .option-bars {
+  .header-top > .container-75 > .option-bars {
     display: block;
     text-align: right;
     font-size: 1rem;
   }
 
-  .header-top > .container > .option-bars a {
+  .header-top > .container-75 > .option-bars a {
   text-decoration: none;
   color: #000;
   }
@@ -111,3 +116,53 @@ header {
 }
 /* fine Jumbotron */
 /* fine header */
+
+/* Main */
+/* Sezione bici sfondo grigio */
+section.bikes {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.bikes > [class*="helbiz"] {
+  background-color: #FAFAFA;
+  width: calc(95% / 2);
+  padding: 90px 20px 30px 20px;
+}
+
+.bikes .helbizbike {
+  margin-left: 5%;
+}
+
+.helbizgo-logo {
+  width: 70%;
+  margin: auto;
+}
+
+.helbizgo-logo img {
+  max-width: 70%;
+  height: auto;
+}
+
+.bikes p {
+  font-size: 1.2rem;
+  padding: 30px 0;
+}
+
+.bikes a {
+  text-decoration: none;
+  color: #0099e6;
+  font-size: 1.1rem;
+}
+
+.bikes i {
+  padding: 0 5px;
+}
+
+.bikes .box-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+/* Fine sezione bici sfondo grigio */
+/* Fine main */
