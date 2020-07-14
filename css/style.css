@@ -29,6 +29,7 @@ header {
   width: 100%;
   background-color: #fff;
   position: fixed;
+  top: 0;
   z-index: 1;
 }
 
@@ -87,8 +88,8 @@ header {
   color: #000;
   }
 }
-
 /* fine barra di navigazione*/
+
 /* Jumbotron */
 .jumbotron {
   position: relative;
@@ -98,10 +99,10 @@ header {
   height: calc(100vh - 50px);
 }
 
-.overlay {
+.jumbotron .overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5)
+  background-color: rgba(0,0,0,0.7)
 }
 
 .jumbotron-text {
@@ -119,9 +120,76 @@ header {
 }
 
 .jumbotron-text p {
-  margin-top: 10px;
+  margin: 20px 0;
   font-weight: 700;
   font-size: 100%;
+}
+
+.appstore {
+  width: 100%;
+}
+
+.appstore .google,
+.appstore .apple {
+  width: calc(35% / 2);
+  float: left;
+}
+
+.appstore .google {
+  margin-left: 30%;
+}
+
+.appstore .apple {
+  margin-left: 5%;
+  margin-right: 30%;
+}
+
+.appstore a img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .appstore .google,
+  .appstore .apple {
+    width: calc(65% / 2);
+  }
+
+  .appstore .google {
+    margin-left: 15%;
+  }
+
+  .appstore .apple {
+    margin-left: 5%;
+    margin-right: 15%;
+  }
+
+  .appstore a img {
+    max-width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .appstore .google,
+  .appstore .apple {
+    width: calc(85% / 2);
+  }
+
+  .appstore .google {
+    margin-left: 5%;
+  }
+
+  .appstore .apple {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .appstore a img {
+    max-width: 70%;
+    height: auto;
+  }
+
 }
 /* fine Jumbotron */
 /* fine header */
@@ -220,7 +288,80 @@ section.bikes {
 
   .steps .text {
     height: 30%;
+    padding: 40px;
+  }
+
+  .steps .text h2 {
+    font-size: 200%;
+  }
+
+  .steps .text h4 {
+    font-size: 130%;
+    padding-right: 30px;
+  }
+
+  .steps .text p {
+    font-size: 110%;
+    margin-top: 10px;
   }
 /* Fine sezione steps con phone frame */
+/* Sezione box colorati */
+.smart-mobility {
+  height: 500px;
+  position: relative;
+  background-image: url(../img/scooter-grass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
 
+.smart-mobility .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.smart-mobility .text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 35%;
+  text-align: center;
+  color: #fff;
+}
+
+.smart-mobility .text h2 {
+  font-size: 270%;
+  line-height: 3rem;
+}
+
+.smart-mobility .text p {
+  font-size: 120%;
+  margin: 30px 0;
+}
+
+.smart-mobility .text a {
+  text-decoration: none;
+  font-size: 120%;
+  color: #0099e6;
+}
+
+.get-app,
+.globe {
+  height: 600px;
+  position: relative;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.get-app img {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* fine sezione box colorati */
 /* Fine main */
