@@ -10,6 +10,12 @@ font-family: "Open Sans", sans-serif;
   margin: auto;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Header */
 header {
   height: 100vh;
@@ -186,4 +192,35 @@ section.bikes {
   }
 }
 /* Fine sezione bici sfondo grigio */
+
+/* Sezione steps con phone frame */
+  section.steps {
+    height: 700px;
+  }
+
+  .steps .street-man {
+    height: 70%;
+    background-image: url(../img/old-man.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 50%;
+    position: relative;
+  }
+
+  .steps .street-man img {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    background-color: #fff;
+    border-radius: 40px;
+  }
+
+  .steps .text {
+    height: 30%;
+  }
+/* Fine sezione steps con phone frame */
+
 /* Fine main */
