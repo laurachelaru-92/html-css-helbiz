@@ -1,0 +1,113 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+/* Header */
+header {
+  height: 100vh;
+}
+
+.header-top {
+  height: 50px;
+  line-height: 50px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.header-top .logo img {
+  width: 80px;
+  height: auto;
+}
+
+/* Barra di navigazione */
+.main-nav,
+.side-nav {
+  text-align: right;
+  list-style: none;
+}
+
+.main-nav ul li,
+.side-nav ul li {
+  display: inline-block;
+}
+
+.main-nav ul li a,
+.side-nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding-right: 30px;
+}
+
+.side-nav .language-select {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  padding: 0 10px;
+}
+
+.side-nav .btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .header-top > .container > .col-lg-10 {
+    display: none;
+  }
+  .header-top > .container > .option-bars {
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+  }
+
+  .header-top > .container > .option-bars a {
+  text-decoration: none;
+  color: #000;
+  }
+}
+/* fine barra di navigazione*/
+/* Jumbotron */
+.jumbotron {
+  position: relative;
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 50px);
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5)
+}
+
+.jumbotron-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 80%;
+}
+
+.jumbotron-text h1 {
+  font-size: 3rem;
+}
+
+.jumbotron-text p {
+  margin-top: 10px;
+  font-weight: 700;
+}
+/* fine Jumbotron */
+/* fine header */
