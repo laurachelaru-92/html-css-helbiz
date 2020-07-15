@@ -34,7 +34,7 @@ header {
 }
 
 .header-top .helbiz-logo img {
-  width: 80px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -54,7 +54,7 @@ header {
 .side-nav ul li a {
   text-decoration: none;
   color: #000;
-  padding-left: 30px;
+  margin-left: 20px;
 }
 
 .side-nav .language-select {
@@ -75,6 +75,11 @@ header {
   .header-top > .container-75 {
     width: 100%;
     padding: 0 15px;
+  }
+
+  .header-top .helbiz-logo img {
+    max-width: 50%;
+    height: auto;
   }
 
   .header-top > .container-75 > .option-bars {
@@ -237,7 +242,7 @@ section.bikes {
 
 @media screen and (min-width: 769px) {
   section.bikes {
-    padding: 60px 0;
+    padding-bottom: 40px;
   }
 
   .bikes > [class*="helbiz"] {
@@ -304,6 +309,16 @@ section.bikes {
     font-size: 110%;
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 992px) {
+    .steps .street-man {
+      height: 60%;
+      background-position: 30% 50%;
+    }
+    .steps .street-man img {
+      border-radius: 30px;
+    }
+  }
 /* Fine sezione steps con phone frame */
 /* Sezione box colorati */
 .smart-mobility {
@@ -312,7 +327,7 @@ section.bikes {
   background-image: url(../img/scooter-grass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 3%;
 }
 
 .smart-mobility .overlay {
@@ -324,9 +339,7 @@ section.bikes {
 .smart-mobility .text {
   position: absolute;
   top: 50%;
-  right: 10%;
   transform: translateY(-50%);
-  width: 35%;
   text-align: center;
   color: #fff;
 }
@@ -338,21 +351,27 @@ section.bikes {
 
 .smart-mobility .text p {
   font-size: 120%;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .smart-mobility .text a {
   text-decoration: none;
   font-size: 120%;
-  color: #0099e6;
+  color: #fff;
 }
 
 .get-app,
 .globe {
-  height: 600px;
-  position: relative;
+  width: calc(97% / 2);
+  height: 700px;
+  float: left;
   text-align: center;
-  border: 2px solid black;
+  position: relative;
+}
+
+.get-app {
+  margin-right: 3%;
+  background-image: linear-gradient(to bottom, #415569, #263039);
 }
 
 .get-app img {
@@ -362,6 +381,62 @@ section.bikes {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .get-app,
+  .globe {
+    height: 600px;
+  }
+
+  .get-app img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .get-app,
+  .globe {
+    height: 500px;
+  }
+
+  .get-app img {
+    width: 40%;
+    height: auto;
+  }
+
+  .globe {
+    margin-top: 3%;
+  }
+}
+
+.get-app .text,
+.globe .text {
+  width: 70%;
+  margin: 15% auto 0 auto;
+  color: #fff;
+}
+
+.get-app .text h2,
+.globe .text h2 {
+  font-size: 270%;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+
+.get-app .text a,
+.globe .text a {
+  text-decoration: none;
+  font-size: 120%;
+  color: #fff;
+}
+
+.globe {
+  background-image: url(../img/city.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 /* fine sezione box colorati */
 /* Fine main */
